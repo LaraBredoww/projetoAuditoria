@@ -1,0 +1,12 @@
+Requisitos de especificação do projeto: 
+    Implementar uma maneira automatizada para fazer uma auditoria de qualidade.
+    Deve incluir a criação de um checklist e calculo de % de aderência
+    registro e acompanhamento de não-conformidade até sua resolução, incluindo processo de escalonamento.
+    Comunicação de NC.
+    Pode ser utilizada combinações de ferramentas ou implementada totalmente.
+    (Não usar Excell e nem uma ferramenta já pronta para essa finalidade)
+    Pode ser Escolhido um artefato de algum processo para criação do checklist não precisa ser configurável.
+    Gravar um vídeo de no máx 3 min apresentando a ferramenta, todos da equipe devem aparecer e falar.
+    Serão selecionado os 3 melhores trabalhos e esses terão 5% de nota extra.
+    Apresentação e Entrega no Canvas.
+    Em equipes.

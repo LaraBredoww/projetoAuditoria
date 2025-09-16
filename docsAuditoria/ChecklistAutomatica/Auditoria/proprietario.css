@@ -1,0 +1,132 @@
+/* Força a barra de rolagem vertical sempre visível na página inteira, evitando pulo no layout */
+html {
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%;
+  min-width: 180px;
+  height: 100vh;
+  min-height: 600px; /* ✅ Altura mínima de 600px */
+  background-color: #385c30;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1%;
+  justify-content: space-between;
+}
+
+.sidebar .logo {
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+  height: 20%;
+}
+
+.sidebar .logo img {
+  width: 100%;
+  max-width: 140px;
+}
+
+.sidebar nav {
+  /*flex-grow: 1;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 70%;
+}
+
+.sidebar nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8% 0%;
+  text-align: center;
+  display: block;
+  transition: background 0.3s;
+}
+
+.sidebar nav a:hover {
+  background-color: #2e4b26;
+}
+
+.sidebar nav a.ativo {
+  background-color: #2e4b26;
+}
+
+.logout {
+  width: 100%;
+  height: 8%;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+  padding-top: 10%;
+}
+
+.logout a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.content {
+  margin-left: 220px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* empilhar elementos verticalmente */
+  align-items: flex-start; /* alinha conteúdo à esquerda */
+  text-align: left;
+}
+
+.content h1 {
+  font-size: 40px;
+}
+
+.table thead th {
+  background-color: #145a32; /* verde escuro */
+  color: white;
+}
+
+/* Estilo para linhas striped verdes */
+.table-striped-green tbody tr:nth-of-type(odd) {
+  background-color: #e9f7ef;
+}
+
+.table-striped-green tbody tr:nth-of-type(even) {
+  background-color: #d5f5e3;
+}
+
+/* Ícones dentro dos botões */
+.table .btn img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+/* NOVO: Wrapper da tabela para limitar altura e scroll interno */
+.table-wrapper {
+  max-height: 70vh;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+/* Fixar o cabeçalho da tabela */
+.table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
